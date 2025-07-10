@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout name="ServiceCallout-Log">
+  <Request variable="logRequest">
+    <Set>
+      <Verb>POST</Verb>
+      <Headers>
+        <Header name="Content-Type">application/json</Header>
+      </Headers>
+      <Payload>{"error": "invalid_access_token", "time": "{system.timestamp}"}</Payload>
+      <Path>/log</Path>
+    </Set>
+  </Request>
+  <HTTPTargetConnection>
+    <URL>https://webhook.site/0d7a857f-021c-4960-9ed9-10d3833acb87</URL>
+  </HTTPTargetConnection>
+</ServiceCallout>

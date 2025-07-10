@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="banking-api-gateway">
+  <DisplayName/>
+  <Description/>
+  <CreatedAt>1752175928259</CreatedAt>
+  <LastModifiedAt>1752176135269</LastModifiedAt>
+  <BasePaths>/banking</BasePaths>
+  <Policies>
+    <Policy>OAuth-v20-1</Policy>
+    <Policy>Raise-Fault</Policy>
+    <Policy>ServiceCallout-Log</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>
